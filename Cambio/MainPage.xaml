@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cambio.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="25, 25, 25, 25">
+            <Image Source="dinero.png" HeightRequest="200"/>
+            <Label Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">Ingrese el costo del artículo que compró el cliente:</Label>
+            <Entry x:Name="Costo" Placeholder="Ingrese el costo del artículo que compró el cliente" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style"></Entry>
+            <Label Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">Ingrese la cantidad otorgada por el cliente:</Label>
+            <Entry x:Name="Cantidad" Placeholder="Ingrese la cantidad otorgada por el cliente" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style"></Entry>
+            <Button x:Name="Button" Text="Calcular Cambio" Clicked="ButtonClicked" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style"></Button>
+            <Label Margin="10, 10, 10, 10" FontFamily="Bookman Old Style">El cambio a entregar:</Label>
+            <Entry x:Name="Cambio" Placeholder="El cambio es:" Margin="10, 10, 10, 10" FontFamily="Bookman Old Style" IsEnabled="False"></Entry>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
